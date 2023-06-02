@@ -1,0 +1,30 @@
+@import "../Base/variables.scss";
+@import "../Base/mixin.scss";
+
+.aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aboutus__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .aboutus__midle__image {
+            width: 50%;
+            position: relative;
+            top: -250px;
+            border: 20px solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        .aboutus__right__image{
+            position: relative;
+            top: -150px;
+            left: 100px;
+        }
+        .aboutus__left__image{
+            position: relative;
+            top: -50px;
+            right: 50px;
+        }
+    }
+}

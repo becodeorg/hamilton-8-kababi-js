@@ -1,16 +1,16 @@
 @import "../Base/mixin.scss";
 
 .header {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 150px;
-    background-color: black;
-    z-index: 10;
+    z-index: 100;
+
 
 }
 
