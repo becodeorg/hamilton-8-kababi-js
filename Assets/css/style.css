@@ -388,6 +388,7 @@ ul {
   .section__hero .section_hero_txt h1 {
     position: relative;
     top: 150px;
+    left: -70px;
     font-size: 80px;
   }
   .section__hero .section_hero_txt a {
@@ -426,7 +427,7 @@ ul {
   }
   .aboutus .aboutus__ilustration img {
     top: 0;
-    min-width: 50%;
+    width: 50%;
   }
   .aboutus .aboutus__ilustration p {
     margin-top: 20px;
@@ -443,6 +444,8 @@ ul {
     height: 130vh;
   }
   .ourmenu .ourmenu__grid {
+    top: 205px;
+    left: 75px;
     grid-template-columns: repeat(1, 1fr);
     width: 50%;
   }
