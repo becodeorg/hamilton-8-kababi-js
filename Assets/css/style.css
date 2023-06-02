@@ -164,9 +164,7 @@ ul {
 }
 
 .aboutus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 150vh;
 }
 .aboutus .aboutus__img {
   display: flex;
@@ -174,7 +172,7 @@ ul {
   align-items: center;
 }
 .aboutus .aboutus__img .aboutus__midle__image {
-  width: 50%;
+  width: 40%;
   position: relative;
   top: -250px;
   border: 20px solid rgb(255, 255, 255);
@@ -189,6 +187,69 @@ ul {
   position: relative;
   top: -50px;
   right: 50px;
+}
+.aboutus .aboutus__txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+}
+.aboutus .aboutus__txt h1 {
+  margin-top: -125px;
+  font-size: 60px;
+  font-weight: 100;
+}
+.aboutus .aboutus__txt h1:before {
+  content: "ABOUT US";
+  position: absolute;
+  font-weight: 100;
+  top: -50px;
+  left: 2%;
+  color: rgb(209, 193, 167);
+  padding: 10px 20px;
+  font-size: 180px;
+  letter-spacing: 2px;
+  opacity: 0.25;
+}
+.aboutus .aboutus__txt img {
+  margin-right: -1500px;
+  position: relative;
+  top: 150px;
+  right: 100px;
+}
+.aboutus .aboutus__ilustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus .aboutus__ilustration img {
+  position: relative;
+  top: -80px;
+  min-width: 20%;
+}
+.aboutus .aboutus__ilustration p {
+  margin-top: -250px;
+  margin-left: 35px;
+  font-size: 20px;
+  width: 400px;
+  line-height: 2;
+  color: gray;
+}
+.aboutus .aboutus__ilustration a {
+  position: relative;
+  top: 100px;
+  right: 400px;
+  display: block;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(179, 148, 91);
+  color: white;
 }
 
 /*Mobile*/
@@ -246,6 +307,9 @@ ul {
     display: none;
   }
   .aboutus .aboutus__img .aboutus__left__image {
+    display: none;
+  }
+  .aboutus .aboutus__img .aboutus__txt h1:before {
     display: none;
   }
 }

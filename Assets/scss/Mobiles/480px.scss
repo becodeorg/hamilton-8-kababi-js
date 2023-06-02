@@ -75,5 +75,10 @@
         .aboutus__left__image{
             display: none;
         }
+        .aboutus__txt{
+            h1:before{
+                display: none;
+            }
+        }
     }
 }
