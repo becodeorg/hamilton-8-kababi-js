@@ -56,4 +56,24 @@
             }
         }
     }
+
+    .first_section_txt {
+        h1:before {
+            display: none;
+        }
+    }
+
+    .aboutus .aboutus__img{
+        .aboutus__midle__image{
+            width: 70%; /* Adjust the width as desired for smaller screens */
+            top: -150px; /* Reset the top positioning for smaller screens */
+            // left: -25px;
+        }
+        .aboutus__right__image{
+            display: none;
+        }
+        .aboutus__left__image{
+            display: none;
+        }
+    }
 }
