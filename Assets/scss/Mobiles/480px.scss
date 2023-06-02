@@ -1,26 +1,33 @@
 @media only screen and (max-width: 480px) {
-    .header {
-        flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
-        justify-content: center; /* Centrer les éléments */
-    }
-    
     .header__navigation {
-        margin: 10px 0; /* Ajuster la marge pour les téléphones */
-        flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
-        justify-content: center; /* Centrer les éléments */
-        li {
-            margin: 5px; /* Ajuster la marge pour les téléphones */
-        }
-    }
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.493);
+        padding: 20px;
+      }
     
-    .header__decal-links {
-        margin: 10px 0; /* Ajuster la marge pour les téléphones */
-        justify-content: center; /* Centrer les éléments */
-    }
+      .header__navigation.open {
+        display: flex;
+      }
     
-    .header__logo {
-        margin-bottom: 10px; /* Ajouter une marge en bas pour les téléphones */
-    }
+      .menu-toggle:checked ~ .header__navigation {
+        display: flex;
+      }
+    
+      .menu-burger {
+        display: flex;
+        z-index: 200;
+      }
+    
+      .header__decal-links {
+        display: none;
+      }
 
     .btn{
         display: none;
@@ -52,7 +59,13 @@
             margin-left: -100px;
 
             h1{
+                position: relative;
+                top: 150px;
                 font-size: 80px;
+            }
+
+            a{
+                top: 300px;
             }
         }
     }
@@ -63,22 +76,96 @@
         }
     }
 
-    .aboutus .aboutus__img{
-        .aboutus__midle__image{
-            width: 70%; /* Adjust the width as desired for smaller screens */
-            top: -150px; /* Reset the top positioning for smaller screens */
-            // left: -25px;
-        }
-        .aboutus__right__image{
-            display: none;
-        }
-        .aboutus__left__image{
-            display: none;
+    .aboutus {
+        .aboutus__img{
+            .aboutus__midle__image{
+                width: 70%; /* Adjust the width as desired for smaller screens */
+                top: -150px; /* Reset the top positioning for smaller screens */
+                // left: -25px;
+            }
+            .aboutus__right__image{
+                display: none;
+            }
+            .aboutus__left__image{
+                display: none;
+            }
+    
         }
         .aboutus__txt{
-            h1:before{
+
+            h1{
+                width: 90%;
+                margin: 10px;
+                font-size: 50px;
+                text-align: center;
+                &:before{
+                    top: -30px;
+                    width: 90%;
+                    font-size: 60px;
+                }
+            }
+            img{
                 display: none;
             }
         }
+        .aboutus__ilustration{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            img {
+              top: 0;
+              min-width: 50%;
+            }
+            
+            p {
+              margin-top: 20px;
+              font-size: 19px;
+              margin-left: 0;
+              width: 80%;
+            }
+            
+            a {
+              top: 0;
+              right: 0;
+              margin-top: 20px;
+            }
+        }
     }
+
+    .ourmenu{
+        height: 130vh;
+        .ourmenu__grid{
+            grid-template-columns: repeat(1, 1fr);
+            width: 50%;
+            article{
+                margin-left: 50px;
+                width: 400px;
+                height: 100px;
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .ourmenu__title{
+            h1{
+                font-size: 25px;
+                &:before{
+                    margin-top: 35px;
+                    margin-left: 35px;
+                    color: red;
+                    width: 90%;
+                    font-size: 40px;
+                }
+            }
+        }
+        .ourmenu__img{
+            display: none;
+        }
+    }
+
 }

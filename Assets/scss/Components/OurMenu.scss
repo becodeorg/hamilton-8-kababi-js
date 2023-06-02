@@ -1,0 +1,83 @@
+@import "../Base/mixin.scss";
+
+.ourmenu{
+    height: 100vh;
+    background-color: rgb(250, 246, 240);
+    .ourmenu__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-family: $Cinzel;
+        top: 150px;
+        h1{
+            margin-top: -50px;
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 50px;
+            &:before {
+                content: "OUR MENU";
+                position: absolute;
+                top: -120px;
+                left: 0;
+                color: rgb(209, 193, 167);
+                padding: 10px 20px;
+                font-size: 200px;
+                letter-spacing: 2px;
+                opacity: 0.25;
+                letter-spacing: 20px;
+              }
+        }
+    }
+    .ourmenu__img{
+        img{
+            position: relative;
+            top: -36px;
+            right: 50px;
+            width: 31%;
+            float: right;
+        }
+    }
+
+    .ourmenu__grid {
+        position: relative;
+        top: 300px;
+        left: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 500px);  // Largeur de chaque colonne
+        justify-content: center;  // Centrer horizontalement les éléments de la grille
+        align-items: center;  // Centrer verticalement les éléments de la grille
+        grid-gap: 20px;  // Espace entre les éléments de la grille
+      
+        article {
+            width: 500px;  // Largeur de chaque élément
+            height: 100px;  // Hauteur de chaque élément
+            
+            background-color: white;
+            padding: 10px;
+            transition: all .1s;
+            &:hover{
+                border: 3px dotted rgb(202, 183, 154);
+            }
+
+            h1{
+                margin: 10px;
+            }
+            p{
+                margin: 10px;
+                font-size: 20px;
+            }
+
+            .price{
+                position: relative;
+                top: -80px;
+                font-size: 40px;
+                float: right;
+            }
+        }
+    }
+      
+      
+      
+}

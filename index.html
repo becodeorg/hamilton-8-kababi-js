@@ -16,11 +16,17 @@
     <header class="header">
         <img src="./Assets/images/img/logo/logo.png" alt="" class="header__logo">
         <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="header__navigation">
                 <li><a href="">Home <i class="fa-solid fa-arrow-down"></i></a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Page">Page <i class="fa-solid fa-arrow-down"></i></a></li>
-                <li><a href="">Shop <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li><a href="#Ourmenu">Shop <i class="fa-solid fa-arrow-down"></i></a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -29,6 +35,7 @@
             <a href="" class="btn">Book a table<i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </header>
+    
     <section class="section__hero">
         <img src="./Assets/images/img/slider/img_bg2.png" alt="" class="section_hero_img">
         <div class="section_hero_txt">
@@ -62,8 +69,56 @@
                 <a href="">Discover More</a>
             </div>
         </section>
-        <section>
-            <h1>try our special offer</h1>
+        <section class="ourmenu" id="Ourmenu">
+            <div class="ourmenu__title">
+                <h1>Try Our Special Offer</h1>
+                <p>Best foods for you & family</p>
+            </div>
+            <div class="ourmenu__img">
+                <img src="./Assets/images/img/our-menu/imgbg-our-menu.jpg" alt="">
+            </div>
+            <div class="ourmenu__grid">
+                <article>
+                    <h1>Raw Scallops From Erquy</h1>
+                    <p>Candied Jerusalem artischokes, truffle</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Ravioli</h1>
+                    <p>Roasted langoustine, consommée</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Cod Filet Cooked on One Side</h1>
+                    <p>Chorizo, chickpea espuma, pequillos</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Sea Bass Ceviche</h1>
+                    <p>Avocado, butternut, lime</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Corrèze Pan-seared Veak Liver</h1>
+                    <p>Olive oil mashed potato, onion jus</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Grilled Veal Filet Mignon</h1>
+                    <p>Pumkin, endives with hazelnuts</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Tender Octopus and Fennel</h1>
+                    <p>Citrus wild rocket condiment</p>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <h1>Viennese Veal Cutlet</h1>
+                    <p>Ricotta and spinach gnocchi, Caccio de Pepe</p>
+                    <p class="price">$89</p>
+                </article>
+            </div>
         </section>
         <section>
             <h1>photogallery</h1>
