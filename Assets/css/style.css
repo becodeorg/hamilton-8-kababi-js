@@ -389,6 +389,7 @@ ul {
   .section__hero .section_hero_txt h1 {
     position: relative;
     top: 150px;
+    left: -70px;
     font-size: 80px;
   }
   .section__hero .section_hero_txt a {
@@ -414,9 +415,7 @@ ul {
     text-align: center;
   }
   .aboutus .aboutus__txt h1:before {
-    top: -30px;
-    width: 90%;
-    font-size: 60px;
+    display: none;
   }
   .aboutus .aboutus__txt img {
     display: none;
@@ -429,7 +428,7 @@ ul {
   }
   .aboutus .aboutus__ilustration img {
     top: 0;
-    min-width: 50%;
+    width: 50%;
   }
   .aboutus .aboutus__ilustration p {
     margin-top: 20px;
@@ -446,6 +445,8 @@ ul {
     height: 130vh;
   }
   .ourmenu .ourmenu__grid {
+    top: 205px;
+    left: 75px;
     grid-template-columns: repeat(1, 1fr);
     width: 50%;
   }
@@ -464,11 +465,7 @@ ul {
     font-size: 25px;
   }
   .ourmenu .ourmenu__title h1:before {
-    margin-top: 35px;
-    margin-left: 35px;
-    color: red;
-    width: 90%;
-    font-size: 40px;
+    display: none;
   }
   .ourmenu .ourmenu__img {
     display: none;

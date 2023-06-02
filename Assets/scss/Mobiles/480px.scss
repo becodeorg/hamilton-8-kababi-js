@@ -61,6 +61,7 @@
             h1{
                 position: relative;
                 top: 150px;
+                left: -70px;
                 font-size: 80px;
             }
 
@@ -99,9 +100,10 @@
                 font-size: 50px;
                 text-align: center;
                 &:before{
-                    top: -30px;
-                    width: 90%;
-                    font-size: 60px;
+                    // top: -30px;
+                    // width: 90%;
+                    // font-size: 60px;
+                    display: none;
                 }
             }
             img{
@@ -116,7 +118,7 @@
             
             img {
               top: 0;
-              min-width: 50%;
+              width: 50%;
             }
             
             p {
@@ -137,6 +139,8 @@
     .ourmenu{
         height: 130vh;
         .ourmenu__grid{
+            top: 205px;
+            left: 75px;
             grid-template-columns: repeat(1, 1fr);
             width: 50%;
             article{
@@ -155,11 +159,12 @@
             h1{
                 font-size: 25px;
                 &:before{
-                    margin-top: 35px;
-                    margin-left: 35px;
-                    color: red;
-                    width: 90%;
-                    font-size: 40px;
+                    // margin-top: 35px;
+                    // margin-left: 35px;
+                    // color: red;
+                    // width: 90%;
+                    // font-size: 40px;
+                    display: none;
                 }
             }
         }
