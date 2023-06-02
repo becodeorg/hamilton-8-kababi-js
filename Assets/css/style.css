@@ -414,9 +414,7 @@ ul {
     text-align: center;
   }
   .aboutus .aboutus__txt h1:before {
-    top: -30px;
-    width: 90%;
-    font-size: 60px;
+    display: none;
   }
   .aboutus .aboutus__txt img {
     display: none;
@@ -464,11 +462,7 @@ ul {
     font-size: 25px;
   }
   .ourmenu .ourmenu__title h1:before {
-    margin-top: 35px;
-    margin-left: 35px;
-    color: red;
-    width: 90%;
-    font-size: 40px;
+    display: none;
   }
   .ourmenu .ourmenu__img {
     display: none;
