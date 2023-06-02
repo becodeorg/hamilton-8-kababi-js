@@ -10,60 +10,80 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
-
-}
-
-.header__navigation {
+  }
+  
+  .header__navigation {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
+  
     li {
-        margin: 0px 25px;
-        a {
-            color: white;
-            font-weight: 600;
-            font-size: 1.3em;
-            letter-spacing: 1px;
-            transition: all .3s;
-            &:hover{
-                color: orange;
-            }
-        }
-    }
-}
-
-.header__decal-links {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-    .btn{
-        margin-left: 20px;
-        padding: 15px 30px;
-        background-color: rgb(245, 185, 73);
-        border-radius: 9px;
-        color: white;
-        font-weight: 600;
-        i{
-            margin-left: 10px;
-            position: relative;
-            top: 2px;
-        }
-    }
-    .header__decal {
+      margin: 0px 25px;
+  
+      a {
         color: white;
         font-weight: 600;
         font-size: 1.3em;
         letter-spacing: 1px;
-        margin-left: 40px;
-        
-        i{
-            color: orange;
-            font-size: 20px;
-            margin: 10px;
+        transition: all .3s;
+  
+        &:hover {
+          color: orange;
         }
+      }
     }
-}
-
-
+  }
+  
+  .header__decal-links {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  
+    .btn {
+      margin-left: 20px;
+      padding: 15px 30px;
+      background-color: rgb(245, 185, 73);
+      border-radius: 9px;
+      color: white;
+      font-weight: 600;
+  
+      i {
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  
+    .header__decal {
+      color: white;
+      font-weight: 600;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      margin-left: 40px;
+  
+      i {
+        color: orange;
+        font-size: 20px;
+        margin: 10px;
+      }
+    }
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      margin: 4px;
+    }
+  }
+  
+  

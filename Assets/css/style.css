@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -81,8 +80,24 @@ ul {
   margin: 10px;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-burger span {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 4px;
+}
+
 .section__hero {
-  height: 95vh;
+  height: 100vh;
   color: white;
   min-width: 100%;
   font-family: "Cinzel", serif;
@@ -164,9 +179,7 @@ ul {
 }
 
 .aboutus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 150vh;
 }
 .aboutus .aboutus__img {
   display: flex;
@@ -174,7 +187,7 @@ ul {
   align-items: center;
 }
 .aboutus .aboutus__img .aboutus__midle__image {
-  width: 50%;
+  width: 40%;
   position: relative;
   top: -250px;
   border: 20px solid rgb(255, 255, 255);
@@ -190,27 +203,168 @@ ul {
   top: -50px;
   right: 50px;
 }
+.aboutus .aboutus__txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+}
+.aboutus .aboutus__txt h1 {
+  margin-top: -125px;
+  font-size: 60px;
+  font-weight: 100;
+}
+.aboutus .aboutus__txt h1:before {
+  content: "ABOUT US";
+  position: absolute;
+  font-weight: 100;
+  top: -50px;
+  left: 2%;
+  color: rgb(209, 193, 167);
+  padding: 10px 20px;
+  font-size: 180px;
+  letter-spacing: 2px;
+  opacity: 0.25;
+}
+.aboutus .aboutus__txt img {
+  margin-right: -1500px;
+  position: relative;
+  top: 150px;
+  right: 100px;
+}
+.aboutus .aboutus__ilustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus .aboutus__ilustration img {
+  position: relative;
+  top: -80px;
+  min-width: 20%;
+}
+.aboutus .aboutus__ilustration p {
+  margin-top: -250px;
+  margin-left: 35px;
+  font-size: 20px;
+  width: 400px;
+  line-height: 2;
+  color: gray;
+}
+.aboutus .aboutus__ilustration a {
+  position: relative;
+  top: 100px;
+  right: 400px;
+  display: block;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(179, 148, 91);
+  color: white;
+}
+
+.ourmenu {
+  height: 100vh;
+  background-color: rgb(250, 246, 240);
+}
+.ourmenu .ourmenu__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Cinzel", serif;
+  top: 150px;
+}
+.ourmenu .ourmenu__title h1 {
+  margin-top: -50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.ourmenu .ourmenu__title h1:before {
+  content: "OUR MENU";
+  position: absolute;
+  top: -120px;
+  left: 0;
+  color: rgb(209, 193, 167);
+  padding: 10px 20px;
+  font-size: 200px;
+  letter-spacing: 2px;
+  opacity: 0.25;
+  letter-spacing: 20px;
+}
+.ourmenu .ourmenu__img img {
+  position: relative;
+  top: -36px;
+  right: 50px;
+  width: 31%;
+  float: right;
+}
+.ourmenu .ourmenu__grid {
+  position: relative;
+  top: 300px;
+  left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.ourmenu .ourmenu__grid article {
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  padding: 10px;
+  transition: all 0.1s;
+}
+.ourmenu .ourmenu__grid article:hover {
+  border: 3px dotted rgb(202, 183, 154);
+}
+.ourmenu .ourmenu__grid article h1 {
+  margin: 10px;
+}
+.ourmenu .ourmenu__grid article p {
+  margin: 10px;
+  font-size: 20px;
+}
+.ourmenu .ourmenu__grid article .price {
+  position: relative;
+  top: -80px;
+  font-size: 40px;
+  float: right;
+}
 
 /*Mobile*/
 @media only screen and (max-width: 480px) {
-  .header {
-    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
-    justify-content: center; /* Centrer les éléments */
-  }
   .header__navigation {
-    margin: 10px 0; /* Ajuster la marge pour les téléphones */
-    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
-    justify-content: center; /* Centrer les éléments */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 20px;
   }
-  .header__navigation li {
-    margin: 5px; /* Ajuster la marge pour les téléphones */
+  .header__navigation.open {
+    display: flex;
+  }
+  .menu-toggle:checked ~ .header__navigation {
+    display: flex;
+  }
+  .menu-burger {
+    display: flex;
+    z-index: 200;
   }
   .header__decal-links {
-    margin: 10px 0; /* Ajuster la marge pour les téléphones */
-    justify-content: center; /* Centrer les éléments */
-  }
-  .header__logo {
-    margin-bottom: 10px; /* Ajouter une marge en bas pour les téléphones */
+    display: none;
   }
   .btn {
     display: none;
@@ -233,7 +387,12 @@ ul {
     margin-left: -100px;
   }
   .section__hero .section_hero_txt h1 {
+    position: relative;
+    top: 150px;
     font-size: 80px;
+  }
+  .section__hero .section_hero_txt a {
+    top: 300px;
   }
   .first_section_txt h1:before {
     display: none;
@@ -246,6 +405,72 @@ ul {
     display: none;
   }
   .aboutus .aboutus__img .aboutus__left__image {
+    display: none;
+  }
+  .aboutus .aboutus__txt h1 {
+    width: 90%;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .aboutus .aboutus__txt h1:before {
+    top: -30px;
+    width: 90%;
+    font-size: 60px;
+  }
+  .aboutus .aboutus__txt img {
+    display: none;
+  }
+  .aboutus .aboutus__ilustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .aboutus .aboutus__ilustration img {
+    top: 0;
+    min-width: 50%;
+  }
+  .aboutus .aboutus__ilustration p {
+    margin-top: 20px;
+    font-size: 19px;
+    margin-left: 0;
+    width: 80%;
+  }
+  .aboutus .aboutus__ilustration a {
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+  }
+  .ourmenu {
+    height: 130vh;
+  }
+  .ourmenu .ourmenu__grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
+  }
+  .ourmenu .ourmenu__grid article {
+    margin-left: 50px;
+    width: 400px;
+    height: 100px;
+  }
+  .ourmenu .ourmenu__grid article h1 {
+    font-size: 20px;
+  }
+  .ourmenu .ourmenu__grid article p {
+    font-size: 15px;
+  }
+  .ourmenu .ourmenu__title h1 {
+    font-size: 25px;
+  }
+  .ourmenu .ourmenu__title h1:before {
+    margin-top: 35px;
+    margin-left: 35px;
+    color: red;
+    width: 90%;
+    font-size: 40px;
+  }
+  .ourmenu .ourmenu__img {
     display: none;
   }
 }
