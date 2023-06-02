@@ -1,3 +1,82 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 /*Mobile*/
+@media screen and (max-width: 480px) {
+  .header {
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
+    justify-content: center; /* Centrer les éléments */
+  }
+  .header__navigation {
+    margin: 10px 0; /* Ajuster la marge pour les téléphones */
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
+    justify-content: center; /* Centrer les éléments */
+  }
+  .header__navigation li {
+    margin: 5px; /* Ajuster la marge pour les téléphones */
+  }
+  .header__decal-links {
+    margin: 10px 0; /* Ajuster la marge pour les téléphones */
+    justify-content: center; /* Centrer les éléments */
+  }
+  .header__logo {
+    margin-bottom: 10px; /* Ajouter une marge en bas pour les téléphones */
+  }
+}
+/*Components*/
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 150px;
+  background-color: black;
+  z-index: 10;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.header__navigation li {
+  margin: 0px 25px;
+}
+.header__navigation li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+
+.header__decal-links {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.header__decal {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
