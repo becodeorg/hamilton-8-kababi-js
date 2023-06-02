@@ -1,0 +1,25 @@
+@import "../Base/variables.scss";
+@import "../Base/mixin.scss";
+
+.first_section{
+    height: 100vh;
+    background-color: $color-text-3;
+    .first_section_txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-family: $Frank;
+        top: 150px;
+        h1{
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+        p{
+            margin-top: 25px;
+            font-size: 20px;
+        }
+    }
+}

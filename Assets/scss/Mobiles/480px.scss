@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .header {
         flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
         justify-content: center; /* Centrer les éléments */
@@ -20,5 +20,40 @@
     
     .header__logo {
         margin-bottom: 10px; /* Ajouter une marge en bas pour les téléphones */
+    }
+
+    .btn{
+        display: none;
+    }
+
+
+    .first_section{
+        .first_section_txt{
+            
+            h1{
+                color: red;
+                width: 50px;
+                position: relative;
+                left: -150px;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+            p{
+                margin-top: 25px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .section__hero{
+        .section_hero_txt{
+            position: relative;
+            top: 250px;
+            margin-left: -100px;
+
+            h1{
+                font-size: 80px;
+            }
+        }
     }
 }
