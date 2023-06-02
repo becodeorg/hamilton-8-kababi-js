@@ -1,0 +1,44 @@
+@import "../Base/mixin.scss";
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    background-color: black;
+    z-index: 10;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    li {
+        margin: 0px 25px;
+        a {
+            color: white;
+            font-weight: 600;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.header__decal-links {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.header__decal {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
