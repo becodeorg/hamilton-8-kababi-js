@@ -297,7 +297,7 @@ ul {
 .aboutus .aboutus__img .aboutus__right__image {
   position: relative;
   top: -150px;
-  left: 100px;
+  left: 10px;
   transition: ease 0.3s;
 }
 .aboutus .aboutus__img .aboutus__right__image:hover {
@@ -342,7 +342,7 @@ ul {
   margin-right: -1500px;
   position: relative;
   top: 150px;
-  right: 100px;
+  right: 300px;
 }
 .aboutus .aboutus__ilustration {
   display: flex;
