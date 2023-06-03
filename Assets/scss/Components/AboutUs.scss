@@ -3,42 +3,59 @@
 
 .aboutus {
     height: 150vh;
-    // background-color: rgb(255, 0, 0);
-    // color: white;
+
     .aboutus__img {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .aboutus__midle__image {
             width: 40%;
             position: relative;
             top: -250px;
             border: 20px solid rgb(255, 255, 255);
             border-radius: 50%;
+            transition: ease .3s;
+            &:hover{
+                transform: translateY(-15px);
+            }
         }
-        .aboutus__right__image{
+
+        .aboutus__right__image {
             position: relative;
             top: -150px;
             left: 100px;
+            transition: ease .3s;
+
+            &:hover{
+                transform: translateY(-15px);
+            }
         }
-        .aboutus__left__image{
+
+        .aboutus__left__image {
             position: relative;
             top: -50px;
             right: 50px;
+            transition: ease .3s;
+
+            &:hover{
+                transform: translateY(-15px);
+            }
         }
     }
 
-    .aboutus__txt{
+    .aboutus__txt {
         @include Center();
         position: relative;
         top: -150px;
         flex-direction: column;
         font-family: $Cinzel;
 
-        h1{
+        h1 {
             margin-top: -125px;
             font-size: 60px;
             font-weight: 100;
+
             &:before {
                 content: "ABOUT US";
                 position: absolute;
@@ -50,9 +67,10 @@
                 font-size: 180px;
                 letter-spacing: 2px;
                 opacity: 0.25;
-              }
+            }
         }
-        img{
+
+        img {
             margin-right: -1500px;
             position: relative;
             top: 150px;
@@ -62,11 +80,13 @@
 
     .aboutus__ilustration {
         @include Center();
+
         img {
             position: relative;
             top: -80px;
             min-width: 20%;
         }
+
         p {
             margin-top: -250px;
             margin-left: 35px;
@@ -75,19 +95,23 @@
             line-height: 2;
             color: gray;
         }
+
         a {
             position: relative;
             top: 100px;
             right: 400px;
-            display: block; 
-            margin-top: 10px; 
+            display: block;
+            margin-top: 10px;
             padding: 15px 30px;
             border-radius: 5px;
             font-size: 18px;
             font-weight: bold;
-            background-color: rgb(179, 148, 91);
+            background-color: $btn-color;
             color: white;
+            transition: all .3s;
+            &:hover{
+                background-color: black;
+            }
         }
-      }
-      
+    }
 }
