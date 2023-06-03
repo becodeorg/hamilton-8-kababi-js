@@ -39,4 +39,54 @@
             font-size: 20px;
         }
     }
+
+    .first_section_img {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Ajustez la hauteur selon vos besoins */
+      
+        .img-wrapper {
+          position: relative;
+          top: 150px;
+          @include Center();
+          flex-direction: column;
+          text-align: center;
+          background-color: #fff;
+          padding: 25px;
+          width: 150%;
+          height: 200px;
+          transition: ease-in-out .3s;
+      
+          &:hover {
+            background-color: $btn-color;
+          }
+      
+          img {
+            display: block;
+            width: 80px; /* Ajustez la taille des images selon vos besoins */
+            height: auto;
+            color: orange; /* Couleur de l'image en orange */
+            box-sizing: border-box;
+            transition: filter 0.3s ease;
+
+          }
+      
+          &.selected {
+            background-color: $btn-color;
+          }
+      
+          span {
+            margin-top: 10px;
+          }
+        }
+      }
+      
+      
+      
+      
+      
 }
