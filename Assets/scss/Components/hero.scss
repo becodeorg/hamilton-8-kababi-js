@@ -32,15 +32,18 @@
             color: white;
             padding: 15px 30px;
             border: 2px solid white;
-            transition: all .2s;
+            transition: all .3s;
+            border-radius: 5px;
             i{
                 position: relative;
                 top: 2px;
                 margin-left: 15px;
-                color: white;
+                color: $btn-color;
+
             }
             &:hover{
-                border: 2px solid orange;
+                background-color: $color-first;
+                color: $btn-color;
             }
         }
     }

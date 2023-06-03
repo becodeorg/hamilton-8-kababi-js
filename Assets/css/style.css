@@ -16,7 +16,9 @@ ul {
   list-style: none;
 }
 
+/*img background*/
 /*Components*/
+/*img background*/
 .header {
   position: absolute;
   top: 0;
@@ -57,10 +59,15 @@ ul {
 .header__decal-links .btn {
   margin-left: 20px;
   padding: 15px 30px;
-  background-color: rgb(245, 185, 73);
+  background-color: #c8a96a;
   border-radius: 9px;
   color: white;
   font-weight: 600;
+  transition: all 0.3s;
+}
+.header__decal-links .btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #c8a96a;
 }
 .header__decal-links .btn i {
   margin-left: 10px;
@@ -75,7 +82,7 @@ ul {
   margin-left: 40px;
 }
 .header__decal-links .header__decal i {
-  color: orange;
+  color: #c8a96a;
   font-size: 20px;
   margin: 10px;
 }
@@ -96,6 +103,7 @@ ul {
   margin: 4px;
 }
 
+/*img background*/
 .section__hero {
   height: 100vh;
   color: white;
@@ -126,18 +134,21 @@ ul {
   color: white;
   padding: 15px 30px;
   border: 2px solid white;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  border-radius: 5px;
 }
 .section__hero .section_hero_txt a i {
   position: relative;
   top: 2px;
   margin-left: 15px;
-  color: white;
+  color: #c8a96a;
 }
 .section__hero .section_hero_txt a:hover {
-  border: 2px solid orange;
+  background-color: rgb(255, 255, 255);
+  color: #c8a96a;
 }
 
+/*img background*/
 .first_section {
   height: 100vh;
   background-image: url("../images/img/banner/imgbgcategory.jpg");
@@ -178,6 +189,7 @@ ul {
   font-size: 20px;
 }
 
+/*img background*/
 .aboutus {
   height: 150vh;
 }
@@ -192,16 +204,28 @@ ul {
   top: -250px;
   border: 20px solid rgb(255, 255, 255);
   border-radius: 50%;
+  transition: ease 0.3s;
+}
+.aboutus .aboutus__img .aboutus__midle__image:hover {
+  transform: translateY(-15px);
 }
 .aboutus .aboutus__img .aboutus__right__image {
   position: relative;
   top: -150px;
   left: 100px;
+  transition: ease 0.3s;
+}
+.aboutus .aboutus__img .aboutus__right__image:hover {
+  transform: translateY(-15px);
 }
 .aboutus .aboutus__img .aboutus__left__image {
   position: relative;
   top: -50px;
   right: 50px;
+  transition: ease 0.3s;
+}
+.aboutus .aboutus__img .aboutus__left__image:hover {
+  transform: translateY(-15px);
 }
 .aboutus .aboutus__txt {
   display: flex;
@@ -263,30 +287,34 @@ ul {
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
-  background-color: rgb(179, 148, 91);
+  background-color: #c8a96a;
   color: white;
+  transition: all 0.3s;
+}
+.aboutus .aboutus__ilustration a:hover {
+  background-color: black;
 }
 
 .ourmenu {
   height: 100vh;
   background-color: rgb(250, 246, 240);
 }
-.ourmenu .ourmenu__title {
+.ourmenu__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  font-family: "Cinzel", serif;
   top: 150px;
+  font-family: "Cinzel", serif;
 }
-.ourmenu .ourmenu__title h1 {
+.ourmenu__title h1 {
   margin-top: -50px;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 50px;
 }
-.ourmenu .ourmenu__title h1:before {
+.ourmenu__title h1:before {
   content: "OUR MENU";
   position: absolute;
   top: -120px;
@@ -294,18 +322,17 @@ ul {
   color: rgb(209, 193, 167);
   padding: 10px 20px;
   font-size: 200px;
-  letter-spacing: 2px;
-  opacity: 0.25;
   letter-spacing: 20px;
+  opacity: 0.25;
 }
-.ourmenu .ourmenu__img img {
+.ourmenu__img img {
   position: relative;
   top: -36px;
   right: 50px;
   width: 31%;
   float: right;
 }
-.ourmenu .ourmenu__grid {
+.ourmenu__grid {
   position: relative;
   top: 300px;
   left: 100px;
@@ -315,24 +342,30 @@ ul {
   align-items: center;
   grid-gap: 20px;
 }
-.ourmenu .ourmenu__grid article {
+.ourmenu__grid article {
   width: 500px;
   height: 100px;
   background-color: white;
   padding: 10px;
   transition: all 0.1s;
 }
-.ourmenu .ourmenu__grid article:hover {
-  border: 3px dotted rgb(202, 183, 154);
+.ourmenu__grid article.active {
+  border: 3px dotted #c8a96a;
 }
-.ourmenu .ourmenu__grid article h1 {
+.ourmenu__grid article:hover {
+  border: 3px dotted #c8a96a;
+}
+.ourmenu__grid article h1,
+.ourmenu__grid article p {
   margin: 10px;
 }
-.ourmenu .ourmenu__grid article p {
-  margin: 10px;
+.ourmenu__grid article h1 {
   font-size: 20px;
 }
-.ourmenu .ourmenu__grid article .price {
+.ourmenu__grid article p {
+  font-size: 20px;
+}
+.ourmenu__grid article .price {
   position: relative;
   top: -80px;
   font-size: 40px;
@@ -341,6 +374,11 @@ ul {
 
 /*Mobile*/
 @media only screen and (max-width: 480px) {
+  .header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.448);
+    backdrop-filter: blur(5px);
+  }
   .header__navigation {
     display: none;
     flex-direction: column;
