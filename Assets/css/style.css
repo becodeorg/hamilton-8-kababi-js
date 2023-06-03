@@ -519,7 +519,7 @@ ul {
     left: -70px;
   }
   .first_section {
-    height: 135vh;
+    height: 145vh;
   }
   .first_section .first_section_txt {
     position: relative;
@@ -538,6 +538,7 @@ ul {
   .first_section .first_section_txt .first_section_img {
     position: relative;
     top: -180px;
+    left: -30px;
     grid-template-columns: repeat(2, 1fr);
   }
   .first_section .first_section_txt .first_section_img .img-wrapper {
