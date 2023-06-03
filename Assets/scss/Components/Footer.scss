@@ -1,0 +1,140 @@
+@import "../Base/mixin.scss";
+@import "../Base/variables.scss";
+
+.footer {
+    background-image: url(/Assets/images/img/footer/img-ng-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $color-first;
+    min-width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    row-gap: 2em;
+    
+
+    
+}
+    .footer__header {
+        margin-top: 1.5rem;
+
+        img {
+            position: relative;
+            top: 0;
+            padding-top: 1em;
+
+        }
+
+    }
+
+    .footer__body {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-bottom: 3rem;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            line-height: 2.5em;
+            color: #b3b3b3;
+
+            h2 {
+                color: $color-first;
+                font-size: 2em;
+                padding-bottom: 0.5em;
+            }
+
+            
+            
+
+            .email-input {
+                width: 100%;
+                margin-top: 1.5em;
+
+                input {
+                    width: 15rem;
+                    height: 2.5rem;
+                    border:  none;
+                    padding: 1em;
+                }
+                button {
+                    margin-left: -0.7em;
+                    height: 100%;
+                    width: 3rem;
+                    height: 3em;
+                    background-color: $color-text-3;
+                    border: none;
+                  &:hover {
+                    cursor: pointer;
+                    background-color: $color-text-3;
+                }  
+            }
+        }
+    }
+}
+    .footer__legal {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding-top: 1em;
+        border-top: 1px solid rgba(255, 255, 255, 0.253);
+        margin-bottom: 3em;
+
+
+        span {
+            color: $color-text-3;
+        }
+
+        img {
+        display: block;
+        position: relative;
+        bottom: 3.5rem;
+        right: 16em;
+        height: 70px;
+        width: 60px;
+        }
+
+        .footer__link__list {
+            display: flex;
+            gap: 0.4em;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                border-radius: 20px;
+                background-color: $color-btn-social;
+                font-size: 1rem;
+                color: #b3b3b3;
+                
+
+            &:hover {
+                color: white;
+                background-color: $color-text-3;
+            }
+        }
+    }
+}
+@media all and (max-width: 400px){
+
+    .footer {
+        height: auto;
+        width: 80vw;
+
+    }
+
+    .footer__body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
