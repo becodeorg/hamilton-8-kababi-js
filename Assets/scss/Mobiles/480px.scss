@@ -76,19 +76,21 @@
     }
   }
 
-  .first_section{
+  .first_section {
     height: 145vh;
     .first_section_txt {
       position: relative;
-  
-      h1{
-        
+
+      h1 {
+        width: 500px;
         top: -150px;
+        left: 10ss0px;
+        font-size: 25px;
         &:before {
           display: none;
         }
       }
-      p{
+      p {
         position: relative;
         top: -180px;
         left: -50px;
@@ -96,10 +98,10 @@
       .first_section_img {
         position: relative;
         top: -180px;
-        left: -30px;
+        left: -60px;
         grid-template-columns: repeat(2, 1fr);
         // grid-template-rows: repeat(3, 1fr);
-    
+
         .img-wrapper {
           top: 0;
           padding: 15px;
@@ -127,7 +129,7 @@
     .aboutus__txt {
       h1 {
         width: 70%;
-        margin: 10px;
+        // margin: 10px;
         font-size: 50px;
         text-align: center;
 
@@ -168,7 +170,7 @@
   }
 
   .ourmenu {
-    height: 140vh;
+    height: 150vh;
 
     .ourmenu__grid {
       top: 140px;
@@ -213,5 +215,16 @@
     }
   }
 
- 
+  /* Ajout des styles pour le bouton orange */
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }

@@ -525,7 +525,10 @@ ul {
     position: relative;
   }
   .first_section .first_section_txt h1 {
+    width: 500px;
     top: -150px;
+    left: 10ss0px;
+    font-size: 25px;
   }
   .first_section .first_section_txt h1:before {
     display: none;
@@ -538,7 +541,7 @@ ul {
   .first_section .first_section_txt .first_section_img {
     position: relative;
     top: -180px;
-    left: -30px;
+    left: -60px;
     grid-template-columns: repeat(2, 1fr);
   }
   .first_section .first_section_txt .first_section_img .img-wrapper {
@@ -557,7 +560,6 @@ ul {
   }
   .aboutus .aboutus__txt h1 {
     width: 70%;
-    margin: 10px;
     font-size: 50px;
     text-align: center;
   }
@@ -589,7 +591,7 @@ ul {
     margin-top: 20px;
   }
   .ourmenu {
-    height: 140vh;
+    height: 150vh;
   }
   .ourmenu .ourmenu__grid {
     top: 140px;
@@ -622,6 +624,18 @@ ul {
   }
   .ourmenu .ourmenu__img {
     display: none;
+  }
+  /* Ajout des styles pour le bouton orange */
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
 
