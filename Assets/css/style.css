@@ -459,7 +459,7 @@ ul {
 
 /*img background*/
 .footer {
-  background-image: url(/Assets/images/img/footer/img-ng-footer.jpg);
+  background-image: url("../images/img/footer/img-ng-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
