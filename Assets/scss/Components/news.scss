@@ -2,42 +2,45 @@
 @import "../Base/variables.scss";
 
 .news {
-    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10%;
 
     &__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include Center();
         position: relative;
+        top: -100px;
+        flex-direction: column;
         font-family: $Cinzel;
-        padding-bottom: 2em;
+        width: 100%;
 
         h1 {
-            margin-top: -50px;
+            margin-top: 50px;
             font-weight: 100;
             text-transform: uppercase;
             font-size: 50px;
-
             
             &:before {
-                content: "OUR MENU";
+                content: "OUR BLOG";
                 position: absolute;
-                left: 0;
-                color:  rgb(209, 193, 167);
+                top: -50px;
+                left: -15%;
+                color: rgb(209, 193, 167);
+                padding: 10px 20px;
                 font-size: 200px;
+                letter-spacing: 2px;
                 opacity: 0.25;
               }
-        }
-        
-}
+        }       
+    }
 
     &__blog {
         width: 100%;
+        position: relative;
+        top: 0;
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,8 +48,6 @@
         &__card {
             display: flex;
             flex-direction: column;
-            width: 30vw;
-            height: 70vh;
             background-color: rgb(250, 246, 240);
             margin: 0.5em;
             
@@ -55,7 +56,6 @@
                 padding-bottom: 1em;
                 .people{
                     width: 100%;
-
                 }
 
                 .legend{
@@ -75,6 +75,7 @@
 
             &__bottom {
                 padding-left: 4em;
+                padding-bottom: 2em;
 
                 p {
                     font-size: 20px;
@@ -101,11 +102,11 @@
         }
     }
     &__brands {
-        padding: 5em 0;
+        padding-top: 2em;
         
         li {
             display: inline;
-            padding: 2em;
+            padding-left: 4em;
         
         }
     }

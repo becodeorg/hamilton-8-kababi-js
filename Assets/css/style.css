@@ -464,7 +464,7 @@ ul {
   background-size: cover;
   background-position: center;
   color: rgb(255, 255, 255);
-  width: 100%;
+  max-width: 100%;
   height: 75vh;
   display: flex;
   flex-direction: column;
@@ -579,37 +579,44 @@ ul {
 
 /*img background*/
 .news {
-  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10%;
 }
 .news__title {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  top: -100px;
+  flex-direction: column;
   font-family: "Cinzel", serif;
-  padding-bottom: 2em;
+  width: 100%;
 }
 .news__title h1 {
-  margin-top: -50px;
+  margin-top: 50px;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 50px;
 }
 .news__title h1:before {
-  content: "OUR MENU";
+  content: "OUR BLOG";
   position: absolute;
-  left: 0;
+  top: -50px;
+  left: -15%;
   color: rgb(209, 193, 167);
+  padding: 10px 20px;
   font-size: 200px;
+  letter-spacing: 2px;
   opacity: 0.25;
 }
 .news__blog {
   width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -617,8 +624,6 @@ ul {
 .news__blog__card {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 70vh;
   background-color: rgb(250, 246, 240);
   margin: 0.5em;
 }
@@ -641,6 +646,7 @@ ul {
 }
 .news__blog__card__bottom {
   padding-left: 4em;
+  padding-bottom: 2em;
 }
 .news__blog__card__bottom p {
   font-size: 20px;
@@ -660,47 +666,50 @@ ul {
   color: rgb(255, 255, 255);
 }
 .news__brands {
-  padding: 5em 0;
+  padding-top: 2em;
 }
 .news__brands li {
   display: inline;
-  padding: 2em;
+  padding-left: 4em;
 }
 
 /*img background*/
 .team {
   height: 100vh;
-  background-color: black;
+  width: 100vw;
+  background: rgb(67, 67, 67);
+  background: radial-gradient(circle, rgb(67, 67, 67) 0%, rgb(0, 0, 0) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .team .title {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -100px;
   font-family: "Cinzel", serif;
+  color: rgb(255, 255, 255);
+  padding-bottom: 2em;
 }
 .team .title h1 {
-  margin-top: -50px;
-  font-weight: 100;
-  text-transform: uppercase;
+  margin-top: -100px;
   font-size: 50px;
-  color: rgb(255, 255, 255);
+  font-weight: 100;
 }
 .team .title h1:before {
   content: "OUR CHIEFS";
   position: absolute;
-  color: rgb(209, 193, 167);
-  font-size: 150px;
+  font-weight: 100;
+  top: -200px;
+  left: 0%;
+  color: rgb(35, 35, 35);
+  font-size: 180px;
+  letter-spacing: 2px;
   opacity: 0.25;
-}
-.team .title p {
-  color: rgb(255, 255, 255);
 }
 .team__chiefs {
   display: flex;
@@ -708,6 +717,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  z-index: 3;
 }
 .team__chiefs img {
   width: 20%;
