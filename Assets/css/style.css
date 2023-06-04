@@ -457,6 +457,126 @@ ul {
   float: right;
 }
 
+/*img background*/
+.footer {
+  background-image: url(/Assets/images/img/footer/img-ng-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  max-width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  row-gap: 2em;
+}
+
+.footer__header {
+  margin-top: 1.5rem;
+}
+.footer__header img {
+  position: relative;
+  top: 0;
+  padding-top: 1em;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.footer__body__list {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5em;
+  color: #b3b3b3;
+}
+.footer__body__list h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+.footer__body__list #email-input {
+  width: 100%;
+  margin-top: 1.5em;
+}
+.footer__body__list #email-input input {
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  padding: 1em;
+}
+.footer__body__list #email-input button {
+  margin-left: -0.7em;
+  height: 100%;
+  width: 3rem;
+  height: 3em;
+  background-color: rgb(201, 169, 105);
+  border: none;
+}
+.footer__body__list #email-input button:hover {
+  cursor: pointer;
+  background-color: rgb(201, 169, 105);
+}
+
+.footer__legal {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 2em;
+  border-top: 1px solid rgba(255, 255, 255, 0.253);
+}
+.footer__legal span {
+  color: rgb(201, 169, 105);
+}
+.footer__legal img {
+  display: block;
+  position: relative;
+  bottom: 3.5rem;
+  right: 0;
+  left: -16em;
+  height: 70px;
+  width: 60px;
+}
+.footer__legal .footer__legal__list {
+  display: flex;
+  gap: 0.4em;
+}
+.footer__legal .footer__legal__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+.footer__legal .footer__legal__list a:hover {
+  color: white;
+  background-color: rgb(201, 169, 105);
+}
+
+@media all and (max-width: 400px) {
+  .footer {
+    height: auto;
+    width: 80vw;
+  }
+  .footer__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__legal__logo {
+  left: 0;
+  right: 0;
+}
+
 /*Mobile*/
 @media only screen and (max-width: 480px) {
   .header {
