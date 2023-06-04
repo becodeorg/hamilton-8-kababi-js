@@ -464,7 +464,7 @@ ul {
   background-size: cover;
   background-position: center;
   color: rgb(255, 255, 255);
-  max-width: 100%;
+  width: 100%;
   height: 75vh;
   display: flex;
   flex-direction: column;
@@ -575,6 +575,86 @@ ul {
 .footer__legal__logo {
   left: 0;
   right: 0;
+}
+
+/*img background*/
+.news {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 0;
+  font-family: "Cinzel", serif;
+}
+.news__title h1 {
+  font-size: 50px;
+}
+.news__blog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news__blog__card {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 70vh;
+  background-color: rgb(250, 246, 240);
+  margin: 0.5em;
+}
+.news__blog__card__top {
+  padding-bottom: 1em;
+}
+.news__blog__card__top .people {
+  width: 100%;
+}
+.news__blog__card__top .legend {
+  padding-top: 1em;
+  padding-left: 4em;
+}
+.news__blog__card__top .legend cite {
+  padding-right: 50px;
+}
+.news__blog__card__top .legend .logo {
+  width: 1em;
+  height: 1em;
+}
+.news__blog__card__bottom {
+  padding-left: 4em;
+}
+.news__blog__card__bottom p {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 2em;
+}
+.news__blog__card__bottom button {
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.news__blog__card__bottom button:hover {
+  background-color: rgb(201, 169, 105);
+  color: rgb(255, 255, 255);
+}
+.news__brands {
+  padding: 5em 0;
+}
+.news__brands li {
+  display: inline;
+  padding: 2em;
 }
 
 /*Mobile*/
