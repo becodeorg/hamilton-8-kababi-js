@@ -1,0 +1,95 @@
+@import "../Base/mixin.scss";
+
+
+
+.ourmenu {
+  height: 100vh;
+  background-color: rgb(250, 246, 240);
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    font-family: $Cinzel;
+
+    h1 {
+      margin-top: -50px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 50px;
+
+      &:before {
+        content: "OUR MENU";
+        position: absolute;
+        top: -120px;
+        left: 0;
+        color:  rgb(209, 193, 167);
+        padding: 10px 20px;
+        font-size: 200px;
+        letter-spacing: 20px;
+        opacity: 0.25;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      position: relative;
+      top: -36px;
+      right: 50px;
+      width: 31%;
+      float: right;
+    }
+  }
+
+  &__grid {
+    position: relative;
+    top: 300px;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+
+    article {
+      width: 500px;
+      height: 100px;
+      background-color: white;
+      padding: 10px;
+      transition: all 0.1s;
+
+      &.active{
+        border: 3px dotted $btn-color;
+        
+      }
+
+      &:hover {
+        border: 3px dotted $btn-color;
+      }
+
+      h1,
+      p {
+        margin: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .price {
+        position: relative;
+        top: -80px;
+        font-size: 40px;
+        float: right;
+      }
+    }
+  }
+}

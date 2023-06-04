@@ -1,0 +1,149 @@
+@import "../Base/mixin.scss";
+@import "../Base/variables.scss";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  li {
+    position: relative;
+    margin: 0px 25px;
+
+    a {
+      color: white;
+      font-weight: 600;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      transition: all .3s;
+      position: relative;
+
+      .arrow {
+        border: solid rgb(255, 255, 255);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        margin-bottom: 3px;
+        padding: 3px;
+
+        &.down {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+
+        &:hover {
+          border-color: orange;
+        }
+      }
+
+      &:hover {
+        color: orange;
+      }
+    }
+
+    .dropdown-menu {
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      // height: 200px;
+      border-radius: 10px;
+      width: 200px;
+      z-index: 1;
+
+      li {
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+
+        a {
+          font-family: $Frank;
+          color: black;
+          font-size: 1.5em;
+          transition: color .3s;
+
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+    }
+
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.header__decal-links {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+
+  .btn {
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: $btn-color;
+    border-radius: 9px;
+    color: white;
+    font-weight: 600;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $color-first;
+      color: $btn-color;
+    }
+
+    i {
+      margin-left: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  .header__decal {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-left: 40px;
+
+    i {
+      color: $btn-color;
+      font-size: 20px;
+      margin: 10px;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+  span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+  }
+}

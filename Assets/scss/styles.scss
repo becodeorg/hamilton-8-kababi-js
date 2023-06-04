@@ -1,6 +1,20 @@
+html{
+    scroll-behavior: smooth;
+}
 @import "./Base/reset.scss";
 @import "./Base/mixin.scss";
 @import "./Base/variables.scss";
 
+
+/*Components*/
+@import "./Components/Header.scss";
+@import "./Components/hero.scss";
+@import "./Components/First_Section.scss";
+@import "./Components/AboutUs.scss";
+@import "./Components/OurMenu.scss";
+@import "./Components/Footer.scss";
+
+
 /*Mobile*/
 @import "./Mobiles/480px.scss";
+
