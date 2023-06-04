@@ -151,6 +151,7 @@ ul {
 /*img background*/
 .section__hero {
   height: 100vh;
+  display: block;
   color: white;
   min-width: 100%;
   font-family: "Cinzel", serif;
