@@ -1,0 +1,85 @@
+@import "../Base/mixin.scss";
+@import "../Base/variables.scss";
+
+
+.photogallery {
+    height: 100vh;
+    width: 100vw;
+    background-color: $color-first;
+  
+    &__title {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: -100px;
+      font-family: $Cinzel;
+  
+      h1 {
+        margin-top: -150px;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 50px;
+  
+        &:before {
+          content: "OUR MENU";
+          position: absolute;
+          left: 0;
+          color:  rgb(209, 193, 167);
+          padding: 10px 20px;
+          font-size: 200px;
+          letter-spacing: 20px;
+          opacity: 0.25;
+        }
+      }
+    }
+    &__gallery {
+        position: relative;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+
+        &__column1 {
+            
+            
+        }
+
+
+
+
+
+        .big {
+            width: 400px;
+            height: 150px;
+        }
+
+        .little {
+            width: 200px;
+            height: 150px;
+        }
+
+
+
+
+
+
+    }
+        a {
+            position: relative;
+            left: 50%;
+            bottom: -10%;
+            margin-top: 10px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: $btn-color;
+            color: white;
+            transition: all .3s;
+
+            &:hover{
+                background-color: black;
+            }
+        }
+            
+}
