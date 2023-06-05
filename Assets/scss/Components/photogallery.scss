@@ -3,7 +3,8 @@
 
 
 .photogallery {
-    margin-top: 10%;
+    margin-top: 13%;
+    margin-bottom: 10%;
     height: 100vh;
     width: 100vw;
     background-color: $color-first;
@@ -30,8 +31,8 @@
         &:before {
             content: "GALLERY";
             position: absolute;
-            left: 0;
-            top: -250px;
+            left: -2em;
+            top: -1em;
             color:  rgb(209, 193, 167);
             font-size: 200px;
             opacity: 0.25;
@@ -45,7 +46,7 @@
         display: grid;
         grid-template-columns: repeat(4, 225px);
         grid-template-rows: repeat(2, 300px);
-        grid-gap: 10px;
+        grid-gap: 2em;
 
     img {
         
@@ -130,6 +131,7 @@
             &:hover{
                 border: none;
                 background-color: $color-text-3;
+                color: $color-first;
             }
         }
             
