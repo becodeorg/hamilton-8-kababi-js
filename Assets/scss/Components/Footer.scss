@@ -127,18 +127,17 @@
     .footer {
         height: auto;
         width: 80vw;
-
     }
 
     .footer__body{
         display: flex;
         flex-direction: column;
     }
-    
-}
-.footer__legal__logo {
-    left: 0;
-    right: 0;
+    .footer__legal__logo {
+        left: 0;
+        right: 0;
+    }
+    //a décaler dans 480px.scss
 }
 
 
