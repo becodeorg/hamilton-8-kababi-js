@@ -48,6 +48,7 @@
         grid-template-rows: repeat(2, 300px);
         grid-gap: 2em;
 
+
     img {
         
         &.big {
@@ -63,12 +64,14 @@
         }
     }
 
-    &__img1 {
+    &__text__img1 {
         grid-column: 1/3;
         grid-row: 1/2;
+        
 
         &:hover {
             filter: brightness(60%);
+            content: "salut";
         }
 
     }
