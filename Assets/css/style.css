@@ -151,7 +151,6 @@ ul {
 /*img background*/
 .section__hero {
   height: 100vh;
-  display: block;
   color: white;
   min-width: 100%;
   font-family: "Cinzel", serif;
@@ -381,82 +380,7 @@ ul {
   background-color: black;
 }
 
-.ourmenu {
-  height: 100vh;
-  background-color: rgb(250, 246, 240);
-}
-.ourmenu__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 150px;
-  font-family: "Cinzel", serif;
-}
-.ourmenu__title h1 {
-  margin-top: -50px;
-  font-weight: 100;
-  text-transform: uppercase;
-  font-size: 50px;
-}
-.ourmenu__title h1:before {
-  content: "OUR MENU";
-  position: absolute;
-  top: -120px;
-  left: 0;
-  color: rgb(209, 193, 167);
-  padding: 10px 20px;
-  font-size: 200px;
-  letter-spacing: 20px;
-  opacity: 0.25;
-}
-.ourmenu__img img {
-  position: relative;
-  top: -40px;
-  width: 623px;
-  float: right;
-}
-.ourmenu__grid {
-  position: relative;
-  top: 300px;
-  left: 250px;
-  display: grid;
-  grid-template-columns: repeat(2, 500px);
-  justify-content: center;
-  align-items: center;
-  grid-gap: 20px;
-}
-.ourmenu__grid article {
-  width: 500px;
-  height: 100px;
-  background-color: white;
-  padding: 10px;
-  transition: all 0.2s;
-  border-radius: 10px;
-}
-.ourmenu__grid article.active {
-  border: 3px dotted #c8a96a;
-}
-.ourmenu__grid article:hover {
-  border: 3px dotted #c8a96a;
-}
-.ourmenu__grid article h1,
-.ourmenu__grid article p {
-  margin: 10px;
-}
-.ourmenu__grid article h1 {
-  font-size: 20px;
-}
-.ourmenu__grid article p {
-  font-size: 20px;
-}
-.ourmenu__grid article .price {
-  position: relative;
-  top: -80px;
-  font-size: 40px;
-  float: right;
-}
+
 
 /*img background*/
 .footer {
@@ -572,12 +496,11 @@ ul {
     display: flex;
     flex-direction: column;
   }
+  .footer__legal__logo {
+    left: 0;
+    right: 0;
+  }
 }
-.footer__legal__logo {
-  left: 0;
-  right: 0;
-}
-
 /*Mobile*/
 @media only screen and (max-width: 480px) {
   .header {
