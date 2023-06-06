@@ -213,7 +213,17 @@
     }
   }
 
+.news {
 
+  &__title{
+
+    h1 {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
 
 
  

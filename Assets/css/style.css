@@ -770,7 +770,7 @@ ul {
 @media all and (max-width: 700px) {
   .team__chiefs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -1056,6 +1056,9 @@ ul {
     top: -70px;
   }
   .ourmenu .ourmenu__img {
+    display: none;
+  }
+  .news__title h1:before {
     display: none;
   }
 }
