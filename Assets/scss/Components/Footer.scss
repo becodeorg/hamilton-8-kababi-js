@@ -2,7 +2,7 @@
 @import "../Base/variables.scss";
 
 .footer {
-    background-image: url(/Assets/images/img/footer/img-ng-footer.jpg);
+    background-image: url("../images/img/footer/img-ng-footer.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -126,7 +126,6 @@
     .footer {
         height: auto;
         width: 80vw;
-
     }
 
     .footer__body{
@@ -149,6 +148,12 @@
     left: 50%;
     bottom: 5em;
     }
+
+    .footer__legal__logo {
+        left: 0;
+        right: 0;
+    }
+    //a décaler dans 480px.scss
 }
 
 

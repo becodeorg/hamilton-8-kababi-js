@@ -213,12 +213,19 @@
     }
   }
 
+<<<<<<< HEAD
 .news {
 
   &__title{
 
     h1 {
       &:before {
+=======
+.team{
+  .title{
+    h1{
+      &:before{
+>>>>>>> 2bb58d288df7ea8dce4492d260dc8e8a4e1fbbba
         display: none;
       }
     }
