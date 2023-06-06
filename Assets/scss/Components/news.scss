@@ -124,9 +124,7 @@
                 &:hover {
                     filter: grayscale(100%);
                 -webkit-filter: grayscale(100%);
-                }
-
-                
+                }   
             }
             .container:hover &__item {
                 animation-play-state: paused;
