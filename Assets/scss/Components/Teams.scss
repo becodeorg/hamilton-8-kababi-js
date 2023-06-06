@@ -1,0 +1,69 @@
+@import "../Base/mixin.scss";
+@import "../Base/variables.scss";
+
+.team {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(67,67,67);
+    background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-family: $Cinzel;
+        color: $color-first;
+        top: -4em;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 100;
+            
+            &:before {
+                content: "OUR CHIEFS";
+                position: absolute;
+                font-weight: 100;
+                top: -0.5em;
+                left: 0%;
+                color: $color-first/*rgb(40, 39, 39)*/;
+                font-size: 200px;
+                opacity: 0.1;
+            }
+        }
+    }
+
+    &__chiefs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+
+        img {
+            width:  20vw;
+
+        }
+    }
+    
+}
+@media all and (max-width: 700px) {
+    
+    .team{
+
+        &__chiefs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

@@ -213,5 +213,30 @@
     }
   }
 
+.team{
+  .title{
+    h1{
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+
+
  
+}
+.photogallery {
+
+  &__title {
+
+    h1 {
+      position: relative;
+      top: 0;
+      &:before {
+        display: none;
+      }
+    }
+      
+  }
 }
