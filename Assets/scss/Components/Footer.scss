@@ -80,6 +80,7 @@
         width: 80%;
         border-top: 1px solid rgba(255, 255, 255, 0.253);
         padding-top: 2em ;
+        padding-bottom: 1em;
         
 
             span {
@@ -87,18 +88,19 @@
         }
         
 
-        img {
+        &__container-logo {
             position: relative;
-            width: 5vw;
-            left: -15em;
+            width: 65px;
+            left: -28%;
             bottom: 4em;
+
         }
         
         .footer__legal__list {
             display: flex;
             flex-direction: row;
             justify-content: end;
-            gap: 0.6em;
+            gap: 0.8em;
 
             a {
                 display: flex;
@@ -133,9 +135,23 @@
     }
     
 }
-.footer__legal__logo {
-    left: 0;
-    right: 0;
+.footer__legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    &__container-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    bottom: 5em;
+    }
 }
+
+
+
 
 
