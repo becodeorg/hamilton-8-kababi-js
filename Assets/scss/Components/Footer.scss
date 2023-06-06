@@ -75,12 +75,20 @@
 }
 
     .footer__legal {
+
         display: flex;
+        justify-self: center;
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
         border-top: 1px solid rgba(255, 255, 255, 0.253);
         padding-top: 2em ;
-        padding-bottom: 1em;
+        
+        &__text {
+
+                font-size: 16px;
+                font-family: $Open;
+                color: #b3b3b3;
+            }
         
 
             span {
@@ -88,12 +96,10 @@
         }
         
 
-        &__container-logo {
+        &__logo {
             position: relative;
-            width: 65px;
-            left: -28%;
-            bottom: 4em;
-
+            width: 80px;
+            right: 200px;
         }
         
         .footer__legal__list {
@@ -101,6 +107,8 @@
             flex-direction: row;
             justify-content: end;
             gap: 0.8em;
+
+            
 
             a {
                 display: flex;
@@ -110,7 +118,7 @@
                 height: 30px;
                 border-radius: 20px;
                 font-size: 1rem;
-                color: #b3b3b3;
+                color: #ffffff;
                 background-color: rgb(67,67,67);
                 
 

@@ -48,7 +48,8 @@
         text-align: center;
 
         img {
-            width:  20vw;
+            width: 20vw;
+            object-fit: contain;
 
         }
     }
@@ -64,6 +65,22 @@
             justify-content: center;
             align-items: center;
 
+            img {
+                width:  20vw;
+    
+            }
+
         }
+    }
+}
+@media all and (max-width: 700px) {
+    
+    .team{
+
+        img {
+            width: 40vw;
+        }
+
+        
     }
 }
