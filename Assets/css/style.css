@@ -412,15 +412,14 @@ ul {
 }
 .ourmenu__img img {
   position: relative;
-  top: -36px;
-  right: 50px;
-  width: 31%;
+  top: -40px;
+  width: 623px;
   float: right;
 }
 .ourmenu__grid {
   position: relative;
   top: 300px;
-  left: 100px;
+  left: 250px;
   display: grid;
   grid-template-columns: repeat(2, 500px);
   justify-content: center;
@@ -432,7 +431,8 @@ ul {
   height: 100px;
   background-color: white;
   padding: 10px;
-  transition: all 0.1s;
+  transition: all 0.2s;
+  border-radius: 10px;
 }
 .ourmenu__grid article.active {
   border: 3px dotted #c8a96a;
@@ -459,7 +459,7 @@ ul {
 
 /*img background*/
 .footer {
-  background-image: url(/Assets/images/img/footer/img-ng-footer.jpg);
+  background-image: url("../images/img/footer/img-ng-footer.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -570,7 +570,12 @@ ul {
     display: flex;
     flex-direction: column;
   }
+  .footer__legal__logo {
+    left: 0;
+    right: 0;
+  }
 }
+
 .footer__legal {
   display: flex;
   flex-direction: column;
