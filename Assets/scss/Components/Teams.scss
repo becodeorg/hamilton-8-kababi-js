@@ -2,7 +2,7 @@
 @import "../Base/variables.scss";
 
 .team {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background: rgb(67,67,67);
     background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
@@ -21,6 +21,7 @@
         font-family: $Cinzel;
         color: $color-first;
         top: -4em;
+        padding-bottom: 2em;
 
         h1 {
             font-size: 50px;
@@ -58,6 +59,7 @@
 @media all and (max-width: 700px) {
     
     .team{
+        height: 100vh;
 
         &__chiefs {
             display: flex;
@@ -69,18 +71,7 @@
                 width:  20vw;
     
             }
-
         }
     }
 }
-@media all and (max-width: 700px) {
-    
-    .team{
 
-        img {
-            width: 40vw;
-        }
-
-        
-    }
-}

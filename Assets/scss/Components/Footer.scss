@@ -4,7 +4,7 @@
 .footer {
     background-image: url("../images/img/footer/img-ng-footer.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     background-position: center;
     color: $color-first;
 
@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
-    gap: 3em; 
     
 }
     .footer__header {

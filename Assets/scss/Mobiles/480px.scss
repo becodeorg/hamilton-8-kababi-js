@@ -213,30 +213,59 @@
     }
   }
 
-.team{
-  .title{
-    h1{
-      &:before{
-        display: none;
+//section team chhiefs
+  .team{
+    .title{
+      h1{
+        &:before{
+          display: none;
+        }
+      }
+    }
+    &__chiefs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+          width:  50vw;
+
       }
     }
   }
-}
+//section gallery-photos
+  .photogallery {
 
+    &__title {
 
- 
-}
-.photogallery {
-
-  &__title {
-
-    h1 {
-      position: relative;
-      top: 0;
-      &:before {
-        display: none;
+      h1 {
+        position: relative;
+        top: 0;
+        &:before {
+          display: none;
+        }
       }
     }
-      
   }
+
+//section news and blogs
+
+  .news {
+    &__title {
+        h1 {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+      .slider-area{
+
+        &__wrapper {
+            width: 400px;
+            padding: 0;
+        }
+      }
+    }
 }
