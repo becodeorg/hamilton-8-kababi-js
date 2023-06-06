@@ -213,5 +213,22 @@
     }
   }
 
+
+
+
  
+}
+.photogallery {
+
+  &__title {
+
+    h1 {
+      position: relative;
+      top: 0;
+      &:before {
+        display: none;
+      }
+    }
+      
+  }
 }
