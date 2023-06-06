@@ -213,7 +213,15 @@
     }
   }
 
-
+.team{
+  .title{
+    h1{
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
 
 
  

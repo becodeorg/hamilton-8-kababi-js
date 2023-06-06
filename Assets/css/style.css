@@ -1058,6 +1058,9 @@ ul {
   .ourmenu .ourmenu__img {
     display: none;
   }
+  .team .title h1:before {
+    display: none;
+  }
 }
 .photogallery__title h1 {
   position: relative;
