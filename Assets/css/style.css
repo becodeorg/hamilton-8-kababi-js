@@ -1739,6 +1739,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    left: -200px;
   }
   .footer__legal__container-logo {
     position: relative;
@@ -1747,11 +1749,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-  }
-  .footer__legal__logo {
-    position: absolute;
-    left: 0;
-    right: 0;
   }
 }
 
