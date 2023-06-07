@@ -92,13 +92,23 @@
 
             span {
             color: $color-text-3;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.253);
+            }
         }
         
 
         &__logo {
             position: relative;
-            width: 80px;
+            width: 100px;
             right: 200px;
+            transition: transform .3s;
+
+
+            &:hover {
+                transform: scale(0.8);
+              }
         }
         
         .footer__legal__list {
@@ -148,17 +158,13 @@
 
 
 
-    &__container-logo {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    left: 50%;
-    bottom: 5em;
-    }
+    
 
     .footer__legal__logo {
         left: 0;
         right: 0;
+
+        
     }
     //a décaler dans 480px.scss
 }

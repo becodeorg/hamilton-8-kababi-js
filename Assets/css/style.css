@@ -538,10 +538,17 @@ ul {
 .footer__legal span {
   color: rgb(201, 169, 105);
 }
+.footer__legal span:hover {
+  color: rgba(255, 255, 255, 0.253);
+}
 .footer__legal__logo {
   position: relative;
-  width: 80px;
+  width: 100px;
   right: 200px;
+  transition: transform 0.3s;
+}
+.footer__legal__logo:hover {
+  transform: scale(0.8);
 }
 .footer__legal .footer__legal__list {
   display: flex;
@@ -579,13 +586,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.footer__legal__container-logo {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  left: 50%;
-  bottom: 5em;
 }
 .footer__legal .footer__legal__logo {
   left: 0;
@@ -636,6 +636,11 @@ ul {
 }
 .news__blog__card {
   background-color: rgb(250, 246, 240);
+  transition: transform 0.3s;
+  z-index: 15;
+}
+.news__blog__card:hover {
+  transform: scale(1.3);
 }
 .news__blog__card__top .people {
   width: 100%;
@@ -685,6 +690,7 @@ ul {
   top: 0;
   height: 100%;
   width: 0%;
+  border-radius: 5px;
   background: rgb(201, 169, 105);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1592,7 +1598,7 @@ ul {
     grid-template-rows: 600px;
   }
   .footer {
-    height: auto;
+    height: 100vh;
     width: 100vw;
   }
   .footer__body {
