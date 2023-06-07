@@ -1,1 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kMR8HjA5)
+README - Kababi
+Description
+This project is a reimplementation of the Kababi website. Kababi is a fictional restaurant that specializes in delicious and authentic kebabs. The aim of this project is to recreate the website's layout and functionality to showcase the menu, provide information about the restaurant, and allow users to place orders.
+
+Website Link
+You can access the Kababi website at the following URL: https://becodeorg.github.io/hamilton-8-kababi-js/
