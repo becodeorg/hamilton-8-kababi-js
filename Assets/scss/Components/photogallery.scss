@@ -63,8 +63,8 @@
                 -ms-transition: all 400ms ease-out;
                 transition: all 400ms ease-out;
 
-                &:hover {
-                    background-color: rgba(115, 110, 110, 0);
+                &:hover .img {
+                    filter: brightness(30%);
                     
                 }
         
@@ -87,7 +87,7 @@
                     color: $color-first;
                     position: absolute;
                     left: 440px;
-                    top: -520px;
+                    top: -530px;
 
                     &:hover {
                         color: $color-text-3;
@@ -122,8 +122,8 @@
                 -ms-transition: all 400ms ease-out;
                 transition: all 400ms ease-out;
                 
-                &:hover {
-                    filter: brightness(10%);
+                &:hover .img {
+                    filter: brightness(30%);
                 }
 
                 &:hover .photogallery__gallery__container2__textimg {
@@ -144,7 +144,7 @@
                     color: $color-first;
                     position: absolute;
                     left: 180px;
-                    top: -520px;
+                    top: -530px;
 
                         &:hover {
                         color: $color-text-3;
@@ -186,8 +186,8 @@
                 -ms-transition: all 400ms ease-out;
                 transition: all 400ms ease-out;
                 
-                &:hover {
-                    filter: brightness(60%);
+                &:hover .img{
+                    filter: brightness(30%);
                 }
 
                 &:hover .photogallery__gallery__container3__textimg {
@@ -208,7 +208,7 @@
                     color: $color-first;
                     position: absolute;
                     left: 180px;
-                    top: -520px;
+                    top: -530px;
 
                         &:hover {
                         color: $color-text-3;
@@ -250,8 +250,8 @@
                 -ms-transition: all 400ms ease-out;
                 transition: all 400ms ease-out;
                 
-                &:hover {
-                    filter: brightness(60%);
+                &:hover .img{
+                    filter: brightness(30%);
                 }
 
                 &:hover .photogallery__gallery__container4__textimg {
@@ -272,7 +272,7 @@
                     color: $color-first;
                     position: absolute;
                     left: 180px;
-                    top: -520px;
+                    top: -530px;
 
                         &:hover {
                         color: $color-text-3;
@@ -314,8 +314,8 @@
                 -ms-transition: all 400ms ease-out;
                 transition: all 400ms ease-out;
                 
-                &:hover {
-                    filter: brightness(60%);
+                &:hover .img{
+                    filter: brightness(30%);
                 }
 
                 &:hover .photogallery__gallery__container5__textimg {
@@ -336,7 +336,7 @@
                     color: $color-first;
                     position: absolute;
                     left: 180px;
-                    top: -520px;
+                    top: -530px;
 
                         &:hover {
                         color: $color-text-3;
@@ -378,8 +378,8 @@
                     -ms-transition: all 400ms ease-out;
                     transition: all 400ms ease-out;
 
-                    &:hover {
-                        opacity: 0.65;
+                    &:hover .img{
+                        filter: brightness(30%);
                         
                     }
             
@@ -401,7 +401,7 @@
                         color: $color-first;
                         position: absolute;
                         left: 440px;
-                        top: -520px;
+                        top: -530px;
 
                         &:hover {
                             color: $color-text-3;

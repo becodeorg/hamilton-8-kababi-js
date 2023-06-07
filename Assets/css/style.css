@@ -836,8 +836,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container1:hover {
-  background-color: rgba(115, 110, 110, 0);
+.photogallery__gallery__container1:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container1:hover .photogallery__gallery__container1__textimg {
   opacity: 1;
@@ -856,7 +856,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 440px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container1__textimg .arrow:hover {
   color: rgb(201, 169, 105);
@@ -884,8 +884,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container2:hover {
-  filter: brightness(10%);
+.photogallery__gallery__container2:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container2:hover .photogallery__gallery__container2__textimg {
   opacity: 1;
@@ -903,7 +903,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 180px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container2__textimg .arrow:hover {
   color: rgb(201, 169, 105);
@@ -935,8 +935,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container3:hover {
-  filter: brightness(60%);
+.photogallery__gallery__container3:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container3:hover .photogallery__gallery__container3__textimg {
   opacity: 1;
@@ -954,7 +954,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 180px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container3__textimg .arrow:hover {
   color: rgb(201, 169, 105);
@@ -986,8 +986,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container4:hover {
-  filter: brightness(60%);
+.photogallery__gallery__container4:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container4:hover .photogallery__gallery__container4__textimg {
   opacity: 1;
@@ -1005,7 +1005,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 180px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container4__textimg .arrow:hover {
   color: rgb(201, 169, 105);
@@ -1037,8 +1037,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container5:hover {
-  filter: brightness(60%);
+.photogallery__gallery__container5:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container5:hover .photogallery__gallery__container5__textimg {
   opacity: 1;
@@ -1056,7 +1056,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 180px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container5__textimg .arrow:hover {
   color: rgb(201, 169, 105);
@@ -1088,8 +1088,8 @@ ul {
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
 }
-.photogallery__gallery__container6:hover {
-  opacity: 0.65;
+.photogallery__gallery__container6:hover .img {
+  filter: brightness(30%);
 }
 .photogallery__gallery__container6:hover .photogallery__gallery__container6__textimg {
   opacity: 1;
@@ -1107,7 +1107,7 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 440px;
-  top: -520px;
+  top: -530px;
 }
 .photogallery__gallery__container6__textimg .arrow:hover {
   color: rgb(201, 169, 105);
