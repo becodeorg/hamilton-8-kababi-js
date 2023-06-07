@@ -1551,7 +1551,26 @@ ul {
   .footer {
     min-width: 100%;
   }
-  .footer .footer__legal__list {
+  .footer__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: -200px;
+  }
+  .footer__legal__container-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+  .footer__legal .footer__legal__list {
     position: relative;
     top: -10px;
     left: -20px;
