@@ -637,10 +637,10 @@ ul {
 .news__blog__card {
   background-color: rgb(250, 246, 240);
   transition: transform 0.3s;
-  z-index: 15;
 }
 .news__blog__card:hover {
   transform: scale(1.3);
+  z-index: 999;
 }
 .news__blog__card__top .people {
   width: 100%;
