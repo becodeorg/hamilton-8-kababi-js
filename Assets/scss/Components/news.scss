@@ -51,10 +51,10 @@
             background-color: rgb(250, 246, 240);
             transition: transform .3s;
 
-            &:hover {
+            /*&:hover {
                 transform: scale(1.3);
                 z-index: 999;
-              }
+              }*/
             
             &__top {
                 .people{
@@ -185,8 +185,19 @@
                 padding: 0;
             }
         }
+        
+    
+        
+    }
+
+    @media  (min-width:700px) {
+        .news__blog__card:hover {
+                    transform: scale(1.3);
+                    z-index: 999;
+                  }
     }
 }
+
 
 
 
