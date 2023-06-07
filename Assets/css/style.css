@@ -749,7 +749,7 @@ ul {
 
 /*img background*/
 .team {
-  height: 100%;
+  height: 100vh;
   background: rgb(0, 0, 0);
   animation: color 6s infinite linear;
   display: flex;
