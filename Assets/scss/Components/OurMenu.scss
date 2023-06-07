@@ -37,12 +37,21 @@
   }
 
   &__img {
+    position: relative;
     img {
-      position: relative;
+      position: absolute;
       top: -40px;
-      left: -10px;
+      right: 0;
       width: 623px;
       float: right;
+
+      &.meat {
+        left: 0;
+        width: 400px;
+        top: 27vh;
+        right: unset;
+
+      }
     }
   }
 
