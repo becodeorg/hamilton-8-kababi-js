@@ -632,7 +632,7 @@ ul {
   gap: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-template-rows: 600px;
+  grid-template-rows: 700px;
 }
 .news__blog__card {
   background-color: rgb(250, 246, 240);
@@ -663,17 +663,38 @@ ul {
   padding-bottom: 1em;
 }
 .news__blog__card__bottom button {
+  position: relative;
   cursor: pointer;
   border: none;
   height: 50px;
-  width: 150px;
+  width: 200px;
   background-color: rgb(255, 255, 255);
   font-size: 20px;
   border-radius: 5px;
-  padding-bottom: 1em;
+  transition: all 0.3s;
+  z-index: 15;
 }
-.news__blog__card__bottom button:hover {
-  background-color: rgb(201, 169, 105);
+.news__blog__card__bottom button span {
+  z-index: 5;
+  position: relative;
+}
+.news__blog__card__bottom button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: rgb(201, 169, 105);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 5;
+  opacity: 1;
+}
+.news__blog__card__bottom button:hover:before {
+  width: 100%;
+}
+.news__blog__card__bottom button:hover span {
   color: rgb(255, 255, 255);
 }
 .news .slider-area {
@@ -693,9 +714,13 @@ ul {
   animation: animate 25s alternate linear infinite;
   padding-left: 2em;
 }
-.news .slider-area__wrapper__item:hover {
+.news .slider-area__wrapper__item {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+.news .slider-area__wrapper__item:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
 .container:hover .news .slider-area__wrapper__item {
   animation-play-state: paused;
@@ -781,7 +806,7 @@ ul {
 /*img background*/
 .photogallery {
   margin-top: 5%;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -1126,12 +1151,11 @@ ul {
 .photogallery__gallery__container6__textimg .titre-text__titre:hover {
   color: rgb(201, 169, 105);
 }
-
-button {
+.photogallery button {
   position: relative;
   left: 0%;
-  height: 50px;
-  margin-top: 10px;
+  height: 60px;
+  margin-top: 30px;
   padding: 15px 30px;
   border: 2px solid #b3b3b3;
   border-radius: 5px;
@@ -1140,10 +1164,29 @@ button {
   background-color: rgb(255, 255, 255);
   color: rgb(29, 29, 29);
   transition: all 0.3s;
+  z-index: 15;
 }
-button:hover {
-  border: none;
-  background-color: rgb(201, 169, 105);
+.photogallery button span {
+  z-index: 5;
+  position: relative;
+}
+.photogallery button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: rgb(201, 169, 105);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 5;
+  opacity: 1;
+}
+.photogallery button:hover:before {
+  width: 100%;
+}
+.photogallery button:hover span {
   color: rgb(255, 255, 255);
 }
 

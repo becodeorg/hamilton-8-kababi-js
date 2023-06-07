@@ -30,7 +30,6 @@
                 color: rgb(209, 193, 167);
                 padding: 10px 20px;
                 font-size: 200px;
-
                 opacity: 0.25;
               }
         }       
@@ -44,7 +43,7 @@
         gap: 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
-        grid-template-rows: 600px;
+        grid-template-rows: 700px;
 
 
 
@@ -86,21 +85,47 @@
                 }
 
                 button {
+                    position: relative;
                     cursor: pointer;
                     border: none;
                     height: 50px;
-                    width: 150px;
+                    width: 200px;
                     background-color: $color-first;
                     font-size: 20px;
                     border-radius: 5px;
-                    padding-bottom: 1em;
+                    transition: all .3s;
+                    z-index: 15;
                     
                 }
-                button:hover {
-                    background-color: $color-text-3;
-                    color: $color-first;
-
+                
+                button span {
+                    z-index: 5;
+                    position: relative;
+                    }
+                    
+            
+                button:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 0%;
+                    background: $color-text-3;
+                    -webkit-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out;
+                    z-index: 5;
+                    opacity: 1;
                 }
+            
+                button:hover:before {
+                    width: 100%;
+                    
+                }
+                      
+                button:hover span {
+                    color: $color-first;
+                    }
 
             }
         }
@@ -120,10 +145,14 @@
             &__item {
                 animation: animate 25s alternate linear infinite;
                 padding-left: 2em;
-                
-                &:hover {
-                    filter: grayscale(100%);
+
+                & {
+                filter: grayscale(100%);
                 -webkit-filter: grayscale(100%);
+                }
+                &:hover {
+                    filter: grayscale(0%);
+                -webkit-filter: grayscale(0%);
                 }   
             }
             .container:hover &__item {

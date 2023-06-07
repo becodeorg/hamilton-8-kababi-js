@@ -4,7 +4,7 @@
 
 .photogallery {
     margin-top: 5%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     height: 100%;
     width: 100%;
     background-color: $color-first;
@@ -427,12 +427,13 @@
                 }
         }
     }
-}
+
 
     button {
         position: relative;
         left: 0%;
-        height: 50px;            margin-top: 10px;
+        height: 60px;            
+        margin-top: 30px;
         padding: 15px 30px;
         border: 2px solid #b3b3b3;
         border-radius: 5px;
@@ -441,14 +442,37 @@
         background-color: $color-first;
         color: $color-text-2;
         transition: all .3s;
+        z-index: 15;
+    }
 
-        &:hover{
-            border: none;
-            background-color: $color-text-3;
-            color: $color-first;
+    button span {
+        z-index: 5;
+        position: relative;
         }
-    }       
+        
 
+    button:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: $color-text-3;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        z-index: 5;
+        opacity: 1;
+    }
 
+    button:hover:before {
+        width: 100%;
+        
+    }
+          
+    button:hover span {
+        color: $color-first;
+        }
 
+}
     
