@@ -7,7 +7,6 @@
     background-size: cover;
     background-position: center;
     color: $color-first;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +24,7 @@
         display: flex;
         justify-content: space-between;
         column-gap: 6em;
+        margin-bottom: 2em;
         
         &__list {
             display: flex;
@@ -76,19 +76,20 @@
     .footer__legal {
 
         display: flex;
+        flex-direction: row;
         justify-self: center;
-        justify-content: space-between;
-        // width: 70%;
+        justify-content: center;
+        width: 70%;
         border-top: 1px solid rgba(255, 255, 255, 0.253);
-        padding-top: 2em ;
+        padding: 1em 0 ;
         
         &__text {
-
                 font-size: 16px;
                 font-family: $Open;
                 color: #b3b3b3;
+                margin-top: 20px;
+                margin-right: 180px;
             }
-        
 
             span {
             color: $color-text-3;
@@ -98,10 +99,13 @@
             }
         }
         
-
         &__logo {
-            display: none;
-
+            width: 6%;
+            object-fit: contain;
+            position: relative;
+            bottom: 40px;
+            left: -170px;
+            
 
             &:hover {
                 transform: scale(0.8);
@@ -110,12 +114,10 @@
         
         .footer__legal__list {
             display: flex;
-            // flex-direction: row;
+            flex-direction: row;
             justify-content: end;
             gap: 0.8em;
-            position: relative;
-            top: -25px;
-            left: 210px;
+            margin-left: 210px;
             
             
 
@@ -138,36 +140,7 @@
         }
     }
 }
-@media all and (max-width: 700px){
 
-    .footer {
-        height: auto;
-        width: 80vw;
-    }
-
-    .footer__body{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-.footer__legal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-
-    
-
-    .footer__legal__logo {
-        left: 0;
-        right: 0;
-
-        
-    }
-    //a décaler dans 480px.scss
-}
 
 
 
