@@ -413,6 +413,7 @@ ul {
 .ourmenu__img img {
   position: relative;
   top: -40px;
+  left: -10px;
   width: 623px;
   float: right;
 }
@@ -716,8 +717,7 @@ ul {
 
 /*img background*/
 .team {
-  height: 80vh;
-  width: 100vw;
+  height: 100vh;
   background: rgb(67, 67, 67);
   background: radial-gradient(circle, rgb(67, 67, 67) 0%, rgb(0, 0, 0) 100%);
   display: flex;
@@ -726,7 +726,7 @@ ul {
   align-items: center;
 }
 .team .title {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -783,7 +783,7 @@ ul {
   margin-top: 5%;
   margin-bottom: 150px;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -1340,18 +1340,130 @@ button:hover {
     padding: 0;
   }
 }
-/*@media screen and (max-width: 768px) {
-    .header {
-        padding: 15px 50px; // Ajuster le padding pour les tablettes
-    }
-
-    .header__navigation {
-        li {
-            margin: 0px 15px; //Ajuster la marge pour les tablettes
-        }
-    }
-}*/
 @media screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.448);
+    backdrop-filter: blur(5px);
+  }
+  .header__navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 20px;
+  }
+  .header__navigation.open {
+    display: flex;
+  }
+  .menu-toggle:checked ~ .header__navigation {
+    display: flex;
+  }
+  .menu-burger {
+    display: flex;
+    z-index: 200;
+  }
+  .header__decal-links {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .first_section {
+    height: 110vh;
+  }
+  .first_section .first_section_txt h1:before {
+    display: none;
+  }
+  .first_section .first_section_img {
+    position: relative;
+    top: -120px;
+    left: -30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .aboutus .aboutus__img .aboutus__midle__image {
+    width: 70%; /* Ajustez la largeur souhaitée pour les écrans plus petits */
+    top: -150px; /* Réinitialisez le positionnement top pour les écrans plus petits */
+  }
+  .aboutus .aboutus__img .aboutus__right__image {
+    display: none;
+  }
+  .aboutus .aboutus__img .aboutus__left__image {
+    display: none;
+  }
+  .aboutus .aboutus__txt h1 {
+    width: 70%;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .aboutus .aboutus__txt h1:before {
+    display: none;
+  }
+  .aboutus .aboutus__txt img {
+    display: none;
+  }
+  .aboutus .aboutus__ilustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .aboutus .aboutus__ilustration img {
+    top: 0;
+    width: 50%;
+  }
+  .aboutus .aboutus__ilustration p {
+    margin-top: 20px;
+    font-size: 19px;
+    margin-left: 0;
+    width: 80%;
+  }
+  .aboutus .aboutus__ilustration a {
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+  }
+  .ourmenu {
+    height: 70vh;
+  }
+  .ourmenu .ourmenu__grid {
+    top: 140px;
+    left: -20px;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+  .ourmenu .ourmenu__grid article {
+    margin-left: 30px;
+    width: 360px;
+    height: 100px;
+  }
+  .ourmenu .ourmenu__grid article h1 {
+    font-size: 20px;
+  }
+  .ourmenu .ourmenu__grid article p {
+    font-size: 15px;
+  }
+  .ourmenu .ourmenu__title h1 {
+    position: relative;
+    top: -90px;
+    font-size: 25px;
+  }
+  .ourmenu .ourmenu__title h1:before {
+    display: none;
+  }
+  .ourmenu .ourmenu__title p {
+    position: relative;
+    top: -70px;
+  }
+  .ourmenu .ourmenu__img {
+    display: none;
+  }
   .photogallery__gallery {
     width: 100%;
     display: grid;
@@ -1453,10 +1565,12 @@ button:hover {
     position: relative;
     width: 30px;
     height: 30px;
-    left: 50%;
-    bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
   }
-  .footer__legal .footer__legal__logo {
+  .footer__legal__logo {
+    position: absolute;
     left: 0;
     right: 0;
   }

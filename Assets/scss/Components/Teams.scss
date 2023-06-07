@@ -2,8 +2,8 @@
 @import "../Base/variables.scss";
 
 .team {
-    height: 80vh;
-    width: 100vw;
+    height: 100vh;
+
     background: rgb(67,67,67);
     background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
 
     .title{
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;

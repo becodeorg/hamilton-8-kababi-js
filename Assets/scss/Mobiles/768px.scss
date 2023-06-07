@@ -1,16 +1,169 @@
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .header {
-        padding: 15px 50px; // Ajuster le padding pour les tablettes
-    }
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.448);
+        backdrop-filter: blur(5px);
+      }
     
-    .header__navigation {
-        li {
-            margin: 0px 15px; //Ajuster la marge pour les tablettes
+      .header__navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.493);
+        padding: 20px;
+      }
+    
+      .header__navigation.open {
+        display: flex;
+      }
+    
+      .menu-toggle:checked ~ .header__navigation {
+        display: flex;
+      }
+    
+      .menu-burger {
+        display: flex;
+        z-index: 200;
+      }
+    
+      .header__decal-links {
+        display: none;
+      }
+    
+      .btn {
+        display: none;
+      }
+      .first_section{
+        height: 110vh;
+        .first_section_txt{
+            h1{
+                &:before{
+                    display: none;
+                }
+                
+            }
         }
-    }
-}*/
+        .first_section_img{
+            position: relative;
+            top: -120px;
+            left: -30px;
+            grid-template-columns: repeat(3, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+        
+        }
+      }
 
-@media screen and/*(min-width: 480px) and */(max-width: 768px){
+      .aboutus {
+        .aboutus__img {
+          .aboutus__midle__image {
+            width: 70%; /* Ajustez la largeur souhaitée pour les écrans plus petits */
+            top: -150px; /* Réinitialisez le positionnement top pour les écrans plus petits */
+          }
+    
+          .aboutus__right__image {
+            display: none;
+          }
+    
+          .aboutus__left__image {
+            display: none;
+          }
+        }
+    
+        .aboutus__txt {
+          h1 {
+            width: 70%;
+            margin: 10px;
+            font-size: 50px;
+            text-align: center;
+    
+            &:before {
+              display: none;
+            }
+          }
+    
+          img {
+            display: none;
+          }
+        }
+    
+        .aboutus__ilustration {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+    
+          img {
+            top: 0;
+            width: 50%;
+          }
+    
+          p {
+            margin-top: 20px;
+            font-size: 19px;
+            margin-left: 0;
+            width: 80%;
+          }
+    
+          a {
+            top: 0;
+            right: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .ourmenu {
+        height: 70vh;
+    
+        .ourmenu__grid {
+          top: 140px;
+          left: -20px;
+          grid-template-columns: repeat(2, 1fr);
+          width: auto;
+    
+          article {
+            margin-left: 30px;
+            width: 360px;
+            height: 100px;
+    
+            h1 {
+              font-size: 20px;
+            }
+    
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+    
+        .ourmenu__title {
+          h1 {
+            position: relative;
+            top: -90px;
+            font-size: 25px;
+    
+            &:before {
+              display: none;
+            }
+          }
+    
+          p {
+            position: relative;
+            top: -70px;
+          }
+        }
+    
+        .ourmenu__img {
+          display: none;
+        }
+      }
+    
+
     .photogallery {
 
         &__gallery {
@@ -129,29 +282,32 @@
     .footer {
         height: auto;
         width: 100vw;
-    }
-
-    .footer__body{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer__legal{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &__container-logo {
+      
+        &__body {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        &__legal {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      
+          &__container-logo {
             position: relative;
             width: 30px;
             height: 30px;
-            left: 50%;
-            bottom: 5em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+          }
+      
+          &__logo {
+            position: absolute;
+            left: 0;
+            right: 0;
+          }
         }
-
-    .footer__legal__logo {
-        left: 0;
-        right: 0;
-        }
-    }
+      }
+      
 }  
