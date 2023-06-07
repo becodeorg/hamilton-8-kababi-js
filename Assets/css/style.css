@@ -1561,6 +1561,9 @@ ul {
     justify-content: center;
     position: relative;
   }
+  .footer__legal__text {
+    margin: 0;
+  }
   .footer__legal__container-logo {
     position: relative;
     left: 50%;
