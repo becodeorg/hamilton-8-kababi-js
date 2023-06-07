@@ -558,7 +558,7 @@ ul {
   width: 6%;
   object-fit: contain;
   position: relative;
-  bottom: 40px;
+  bottom: 45px;
   left: -170px;
 }
 .footer__legal__logo:hover {
@@ -1564,9 +1564,11 @@ ul {
   .footer__legal__text {
     margin: 0;
   }
-  .footer__legal__container-logo {
+  .footer__legal__legal__logo {
+    width: 10%;
+    object-fit: contain;
     position: relative;
-    left: 50%;
+    left: -50px;
   }
   .footer__legal .footer__legal__list {
     position: relative;
@@ -1840,13 +1842,9 @@ ul {
     position: relative;
     left: -200px;
   }
-  .footer__legal__container-logo {
+  .footer__legal__logo {
     position: relative;
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
+    left: 470px;
   }
 }
 

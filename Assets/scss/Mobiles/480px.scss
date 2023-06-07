@@ -500,9 +500,11 @@
 
     }
 
-    &__container-logo {
-      position: relative;
-      left: 50%;
+    &__legal__logo {
+          width: 10%;
+          object-fit: contain;
+          position: relative;
+            left: -50px;
     }
       .footer__legal__list{
         position: relative;
